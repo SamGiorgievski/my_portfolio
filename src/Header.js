@@ -8,41 +8,67 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 export default function Header( { handleThemeToggle }) {
   return (
     <AppBar 
-    position="static">
-        <Toolbar>
+    position="static"
+    
+    >
+        <Toolbar 
+        sx={{
+          width: "100%",
+          display:"flex",
+          justifyContent:"space-between"
+        }}
+        >
 
           <Typography 
           variant="h6" 
           component="div" 
-          sx={{ flexGrow: 1 }}>
+          sx={{ }}>
             Portfolio
           </Typography>
 
+          <Box>
 
-          <Link to="/projects">
-            <Button 
-            variant="text"
-            color="primary"
-            >
-              Experience
+
+          <Link to="/">
+              <Button 
+              variant="text"
+              color="primary"
+              >
+                Home
+              </Button>
+            </Link>
+
+            <Link to="/experience">
+              <Button 
+              variant="text"
+              color="primary"
+              >
+                Experience
+              </Button>
+            </Link>
+            
+            
+            <Link to="/projects">
+              <Button variant="text">
+            Projects
             </Button>
-          </Link>
+            </Link>
+          </Box>
           
-          
-          <Link to="/projects">
-            <Button variant="text" href="/">
-          Projects
-          </Button>
-          </Link>
-          
-
-          <LightModeIcon />
-          <Switch 
-          color="primary"
-          defaultChecked
-          onClick={handleThemeToggle}
-          />
-          <DarkModeIcon />
+          <Box 
+          sx={{
+            display: "flex",
+            flexDirection:"row",
+            alignItems:"center"
+          }}>
+            <LightModeIcon />
+            <Switch 
+            color="primary"
+            defaultChecked
+            onClick={handleThemeToggle}
+            />
+            <DarkModeIcon />
+          </Box>
         </Toolbar>
       </AppBar>
   )

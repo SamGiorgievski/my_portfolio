@@ -5,6 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Home from "./Home";
 import Header from "./Header";
 import Projects from "./Projects";
+import Experience from "./Experience";
 
 
 function App() {
@@ -54,6 +55,11 @@ function App() {
           <Route 
           path ="/projects" 
           index element = {<Projects/>}
+          />
+
+          <Route 
+          path ="/experience" 
+          index element = {<Experience/>}
           />
 
 
