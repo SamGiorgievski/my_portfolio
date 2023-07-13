@@ -1,24 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import { Link, Routes, Route } from 'react-router-dom';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableFooter, TablePagination, TableRow, TableSortLabel, Paper, useTheme, ThemeProvider, createTheme } from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
+import Home from "./Home";
+import Header from "./Header";
+import Projects from "./Projects";
+
 
 function App() {
+
+  // State
+  const [themeToggle, setThemeToggle] = useState("dark")
+
+  // Theme
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+    },
+  });
+
+  const lightTheme = createTheme({
+    palette: {
+      mode: 'light',
+    },
+  });
+
+  const handleThemeToggle = () => {
+    console.log(themeToggle)
+    setThemeToggle((prev) => (
+      (themeToggle === "dark" ? "light" : "dark")
+      ));
+    console.log(themeToggle)
+  }
+
+  const theme = themeToggle === "dark" ? darkTheme : lightTheme;
+
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <div className="App">
+
+        <Header 
+        handleThemeToggle={handleThemeToggle}
+        />
+        <Routes>
+          <Route 
+          path ="/" 
+          index element = {<Home/>}
+          />
+
+          <Route 
+          path ="/projects" 
+          index element = {<Projects/>}
+          />
+
+
+        </Routes>
+
+      </div>
+    </ThemeProvider>
   );
 }
 
