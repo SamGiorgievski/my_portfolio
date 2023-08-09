@@ -24,7 +24,7 @@ export default function Header( { handleThemeToggle }) {
           variant="h6" 
           component="div" 
           sx={{ }}>
-            Portfolio
+            Sam Giorgievski's Portfolio
           </Typography>
 
           <Box>
