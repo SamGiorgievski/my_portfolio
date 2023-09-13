@@ -22,8 +22,11 @@ export default function Header( { handleThemeToggle }) {
 
           <Typography 
           variant="h6" 
-          component="div" 
-          sx={{ }}>
+          component={Link}
+          to="/"
+          color="textPrimary"
+          sx={{ textDecoration: 'none' }}
+          >
             SG Portfolio
           </Typography>
 
