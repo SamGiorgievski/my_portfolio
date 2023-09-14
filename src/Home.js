@@ -10,7 +10,7 @@ export default function Home() {
     <Box
       sx={{
         width: "50%",
-        height: 400,
+        height: "30vh",
         // backgroundColor: 'primary.dark',
         // '&:hover': {
         //   backgroundColor: 'primary.main',
@@ -61,8 +61,43 @@ export default function Home() {
       </Typography>
 
       </Box>
+      
 
     </Box>
+    <Divider variant="middle" />
+
+    <Box
+        sx={{
+          width: "60%",
+          margin: "auto",
+          height: "30vh",
+          paddingTop: 3, // Adjust as needed
+          display: "flex",
+          flexDirection: "column",
+          
+        }}
+      >
+        <Typography sx={{
+          margin: 3
+        }}>
+        Hey there, I'm Sam Giorgievski, and I've been on quite the tech adventure for the past 8 years. 
+        
+        
+        </Typography>
+
+        <Typography sx={{
+          margin: 3
+        }}>
+        My last position as Project Manager/Scrum Master taught me everything about the software development lifecycle, and what it means to work effectively with a team of developers. 
+        </Typography>
+
+        <Typography sx={{
+          margin: 3
+        }}>
+        I LOVED working with developers and learned so much that it inspired me to attend a full-stack web dev bootcamp at Lighthouse Labs to become a developer myself! It was intense, but I loved every moment of it. 
+        </Typography>
+
+        </Box>
 
     <Divider variant="middle" />
 
@@ -70,8 +105,12 @@ export default function Home() {
         sx={{
           width: "50%",
           margin: "auto",
+          height: "30vh",
           paddingTop: 3, // Adjust as needed
-          textAlign: 'center'
+          textAlign: 'center',
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-around"
         }}
       >
         <Typography variant="h4" gutterBottom>
@@ -124,18 +163,33 @@ export default function Home() {
 
         </Box>
 
-
-
         <Typography variant="h4" gutterBottom sx={{ marginTop: 3 }}>
           Personal Interests
         </Typography>
 
-        <Typography variant="body1">
-          Salsa dancing, biking, learning spanish, crypto mining & investing, gluten-free cooking
-        </Typography>
+        <Box sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-around"
+        }}> 
+
+        <Box sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          margin: 1
+        }}>
+
+          <Chip label="Salsa dancing" />
+          <Chip label="Biking" />
+          <Chip label="Learning spanish" />
+          <Chip label="crypto mining & investing" />
+          <Chip label="gluten-free cooking" />
+
+          </Box>
+        </Box>
       </Box>
 
-    
     </>
   )
 }

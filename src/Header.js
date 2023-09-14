@@ -10,7 +10,6 @@ export default function Header( { handleThemeToggle }) {
   return (
     <AppBar 
     position="static"
-    
     >
         <Toolbar 
         sx={{
