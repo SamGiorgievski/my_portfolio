@@ -94,7 +94,7 @@ export default function Home() {
         <Typography sx={{
           margin: 3
         }}>
-        I LOVED working with developers and learned so much that it inspired me to attend a full-stack web dev bootcamp at Lighthouse Labs to become a developer myself! It was intense, but I loved every moment of it. 
+        I LOVED working with developers and learned so much that it inspired me to attend a full-stack web dev bootcamp at Lighthouse Labs and become one myself! It was intense, but I loved every moment of it. 
         </Typography>
 
         </Box>
