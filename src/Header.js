@@ -27,7 +27,7 @@ export default function Header( { handleThemeToggle }) {
           color="textPrimary"
           sx={{ textDecoration: 'none' }}
           >
-            SG Portfolio
+            Sam's Portfolio
           </Typography>
 
           <Box>
