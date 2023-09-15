@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Avatar, Typography, Divider, Chip } from '@mui/material';
-import sam from "./assets/sam.jpg";
+import sam from "./assets/sam.png";
 
 
 
