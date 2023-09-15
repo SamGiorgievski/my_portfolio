@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Typography, Paper, Grid, CardMedia, Button, Box } from '@mui/material';
 import eatSafely1 from "../src/assets/EatSafely1.png"
-import eatSafely2 from "../src/assets/EatSafely2.png"
-import eatSafely3 from "../src/assets/EatSafely3.png"
 import profileMaker1 from "../src/assets/ProfilePicGenerator1.png"
 import basicapi from "../src/assets/basicAPI.png"
 
