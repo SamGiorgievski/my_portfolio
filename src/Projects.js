@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography, Paper, Grid, CardMedia, Link, Button } from '@mui/material';
+import { Container, Typography, Paper, Grid, CardMedia, Button } from '@mui/material';
 import eatSafely1 from "../src/assets/EatSafely1.png"
 import eatSafely2 from "../src/assets/EatSafely2.png"
 import eatSafely3 from "../src/assets/EatSafely3.png"
