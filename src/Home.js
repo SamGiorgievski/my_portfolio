@@ -11,11 +11,6 @@ export default function Home() {
       sx={{
         width: "50%",
         height: "30vh",
-        // backgroundColor: 'primary.dark',
-        // '&:hover': {
-        //   backgroundColor: 'primary.main',
-        //   opacity: [0.9, 0.8, 0.7],
-        // },
         margin: "auto",
         position: 'relative',
         top:'30%',
@@ -30,10 +25,6 @@ export default function Home() {
       sx={{ 
         width: 250, 
         height: 250,
-        // margin: 'auto',
-        // position: 'absolute',
-        // top: '50%',
-        // bottom: '50%'
       }}
       />
 
@@ -71,7 +62,7 @@ export default function Home() {
           width: "60%",
           margin: "auto",
           height: "30vh",
-          paddingTop: 3, // Adjust as needed
+          paddingTop: 3,
           display: "flex",
           flexDirection: "column",
           
