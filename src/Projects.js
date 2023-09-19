@@ -13,7 +13,7 @@ const Projects = () => {
     }}>
       <Grid container spacing={3} sx={{
       }}>
-        
+
         {/* Project 1 */}
 
         <Grid item xs={12}>
@@ -35,14 +35,14 @@ const Projects = () => {
 
                 <CardMedia
                   component="img"
-                  alt="Basic API Screenshot"
+                  alt="EatSafely Screenshot"
                   height= "auto"
                   image={eatSafely1}
                   sx={{
                     width: { xs: "90%", sm: "90%", md: "40%"},
                     marginBottom: {xs: "10px", sm: "10px", md: "0px", lg: "0px", xl: "0px"},
                     marginLeft: {md: "30px", lg: "30px", xl: "30px"},
-                    maxHeight: "300px",
+                    maxHeight: "250px",
                     maxWidth: "300px"
                   }}
                   />
@@ -109,58 +109,73 @@ const Projects = () => {
         </Grid>
 
 
-
-
         {/* PROJECT 2 */}
 
         <Grid item xs={12}>
 
-          <Paper 
-          elevation={3} 
+        <Paper elevation={3} 
           sx={{
-            padding: 3
+            padding: 3,
+            minWidth: "400px",
+            maxWidth: {xs: "600px", sm: "600px", md: "1050px", lg: "1050px", xl: "1050px"},
+            margin: "auto"
           }}>
 
             <Box sx={{
               display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-around"
+              flexDirection: {xs: "column", sm: "column", md: "row"},
+              justifyContent: "space-around",
+              alignItems: { xs: "center", sm: "center", md: "normal"}
               }}> 
 
-              <CardMedia
+                <CardMedia
                   component="img"
                   alt="Profile Pic Generator Screenshot"
-                  height="200"
+                  height= "auto"
                   image={profileMaker1}
                   sx={{
-                    width: "40%"
+                    width: { xs: "90%", sm: "90%", md: "40%"},
+                    marginBottom: {xs: "10px", sm: "10px", md: "0px", lg: "0px", xl: "0px"},
+                    marginLeft: {md: "30px", lg: "30px", xl: "30px"},
+                    maxHeight: "250px",
+                    maxWidth: "300px"
                   }}
-                />
+                  />
 
-            <Grid container spacing={1} sx={{
-              width: "50%",
+            <Grid 
+            sx={{
+              width: { xs: "90%", sm: "90%", md: "70%"},
               display: "flex",
               flexDirection: "column",
-              justifyContent: "space-between"
+              justifyContent: "space-between",
+              alignItems: {xs: "center", sm: "center", md: "center"},
+              marginLeft: {md: "50px", lg: "50px", xl: "50px"},
+              marginRight: {md: "30px", lg: "30px", xl: "30px"}
             }}>
 
-            <Typography variant="h4">Profile Pic Generator</Typography>
+            <Typography variant="h4" sx={{
+              marginBottom: {xs: "5px", sm: "5px"}
+            }}>Profile Pic Generator</Typography>
             <Typography variant="body1" sx={{
-              marginBottom: 2
-            }}>
+                marginBottom: {xs: "10px", sm: "10px"},
+                wordWrap: "break-word"
+              }}>
               A fun app that generates unique profile pictures based on user prompts. Images are generated using openai api DALL·E model and stored in firebase.
             </Typography>
 
  
             <Grid sx={{
-                width: "100%",
-                display: "flex",
-                alignItems: "flex-end",
-                justifyContent: "space-between",
-                flex: "wrap"
-              }}>
+                  width: "100%",
+                  display: "flex",
+                  flexDirection: {xs: "column", sm: "column", md: "row"},
+                  alignItems: {xs: "center", sm: "center", md: "flex-end"},
+                  justifyContent: "space-between",
+                  flex: "wrap"
+                }}>
                 <Typography variant="body2" sx={{  
-                  fontStyle: 'italic' }}>
+                    fontStyle: 'italic',
+                    marginBottom: {xs: "5px", sm: "5px", md: "0px", lg: "0px", xl: "0px"},
+                    textAlign: {xs: "center", sm: "center"} }}>
                   Tech Stack: React, React Router, Firebase
                 </Typography>
                 <Button 
@@ -182,42 +197,67 @@ const Projects = () => {
           </Paper>
         </Grid>
 
+
+
+
+
+
+
                   {/* PROJECT 3 */}
 
         <Grid item xs={12}>
           
-          <Paper elevation={3} 
+        <Paper elevation={3} 
           sx={{
-            padding: 3
+            padding: 3,
+            minWidth: "400px",
+            maxWidth: {xs: "600px", sm: "600px", md: "1050px", lg: "1050px", xl: "1050px"},
+            margin: "auto"
           }}>
 
             <Box sx={{
               display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-around"
+              flexDirection: {xs: "column", sm: "column", md: "row"},
+              justifyContent: "space-around",
+              alignItems: { xs: "center", sm: "center", md: "normal"}
               }}> 
+
 
                 <CardMedia
                   component="img"
                   alt="Basic API Screenshot"
-
+                  height= "auto"
                   image={basicapi}
                   sx={{
-                    width: "40%"
+                    width: { xs: "90%", sm: "90%", md: "40%"},
+                    marginBottom: {xs: "10px", sm: "10px", md: "0px", lg: "0px", xl: "0px"},
+                    marginLeft: {md: "30px", lg: "30px", xl: "30px"},
+                    maxHeight: "250px",
+                    maxWidth: "300px"
                   }}
-                  />
+                  /> 
+                  
 
             <Grid 
             sx={{
-              width: "50%",
+              width: { xs: "90%", sm: "90%", md: "70%"},
               display: "flex",
               flexDirection: "column",
-              justifyContent: "space-between"
+              justifyContent: "space-between",
+              alignItems: {xs: "center", sm: "center", md: "center"},
+              marginLeft: {md: "50px", lg: "50px", xl: "50px"},
+              marginRight: {md: "30px", lg: "30px", xl: "30px"}
             }}>
               
     
-              <Typography variant="h4">Basic API</Typography>
+              <Typography variant="h4" sx={{
+                marginBottom: {xs: "5px", sm: "5px"}
+              }}>
+                Basic API
+                </Typography>
               <Typography variant="body1" sx={{
+                marginBottom: {xs: "10px", sm: "10px"},
+                wordWrap: "break-word"
               }}>
                 A simple API backend project that demonstrates CRUD
                 operations with a database. The purpose of me building this app was to learn Postman, and pgAdmin.
@@ -226,12 +266,15 @@ const Projects = () => {
               <Grid sx={{
                   width: "100%",
                   display: "flex",
-                  alignItems: "flex-end",
+                  flexDirection: {xs: "column", sm: "column", md: "row"},
+                  alignItems: {xs: "center", sm: "center", md: "flex-end"},
                   justifyContent: "space-between",
                   flex: "wrap"
                 }}>
                   <Typography variant="body2" sx={{  
-                    fontStyle: 'italic' }}>
+                    fontStyle: 'italic',
+                    marginBottom: {xs: "5px", sm: "5px", md: "0px", lg: "0px", xl: "0px"},
+                    textAlign: {xs: "center", sm: "center"} }}>
                     Tech Stack: React, Node.js, Express, Postman
                   </Typography>
                   <Button 
