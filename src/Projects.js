@@ -20,50 +20,70 @@ const Projects = () => {
           
           <Paper elevation={3} 
           sx={{
-            padding: 3
+            padding: 3,
+            minWidth: "400px",
+            maxWidth: {xs: "600px", sm: "600px", md: "1050px", lg: "1050px", xl: "1050px"},
+            margin: "auto"
           }}>
 
             <Box sx={{
               display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-around"
+              flexDirection: {xs: "column", sm: "column", md: "row"},
+              justifyContent: "space-around",
+              alignItems: { xs: "center", sm: "center", md: "normal"}
               }}> 
 
                 <CardMedia
                   component="img"
                   alt="Basic API Screenshot"
-                  height= "200"
+                  height= "auto"
                   image={eatSafely1}
                   sx={{
-                    width: "40%"
+                    width: { xs: "90%", sm: "90%", md: "40%"},
+                    marginBottom: {xs: "10px", sm: "10px", md: "0px", lg: "0px", xl: "0px"},
+                    marginLeft: {md: "30px", lg: "30px", xl: "30px"},
+                    maxHeight: "300px",
+                    maxWidth: "300px"
                   }}
                   />
 
             <Grid 
             sx={{
-              width: "50%",
+              width: { xs: "90%", sm: "90%", md: "70%"},
               display: "flex",
               flexDirection: "column",
-              justifyContent: "space-between"
+              justifyContent: "space-between",
+              alignItems: {xs: "center", sm: "center", md: "center"},
+              marginLeft: {md: "50px", lg: "50px", xl: "50px"},
+              marginRight: {md: "30px", lg: "30px", xl: "30px"}
             }}>
               
     
-              <Typography variant="h4">EatSafely</Typography>
-              <Typography variant="body1" sx={{
+              <Typography variant="h4" sx={{
+                marginBottom: {xs: "5px", sm: "5px"}
               }}>
-                A helpful app for people with food allergies/intolerances. Create a profile, enter your allergies/intolerances, then scan any ingredient label to see if the product is safe for consumption. This app uses Tesseract OCR (optical character recognition) to extract the text from an image.
+                EatSafely
+                </Typography>
+              <Typography variant="body1" sx={{
+                marginBottom: {xs: "10px", sm: "10px"},
+                wordWrap: "break-word"
+              }}>
+                A helpful app for people with food allergies and intolerances. Create a profile, enter your allergies and intolerances, then scan any ingredient label to see if the product is safe for consumption. This app uses Tesseract OCR (optical character recognition) to extract the text from an image.
               </Typography>
 
               <Grid sx={{
                   width: "100%",
                   display: "flex",
-                  alignItems: "flex-end",
+                  flexDirection: {xs: "column", sm: "column", md: "row"},
+                  alignItems: {xs: "center", sm: "center", md: "flex-end"},
                   justifyContent: "space-between",
                   flex: "wrap"
                 }}>
                   <Typography variant="body2" sx={{  
-                    fontStyle: 'italic' }}>
-                    Tech Stack: React, Node.js, Express, Tesseract OCR
+                    fontStyle: 'italic',
+                    marginBottom: {xs: "5px", sm: "5px", md: "0px", lg: "0px", xl: "0px"},
+                    textAlign: {xs: "center", sm: "center"} }}>
+                    Stack: React, Node.js, Express, Tesseract OCR
                   </Typography>
                   <Button 
                   variant="text"
@@ -71,10 +91,11 @@ const Projects = () => {
                   target="_blank" href="https://github.com/SamGiorgievski/EatSafely"
                   padding="none"
                   sx={{
-                    padding: "0px !important"
+                    padding: "0px !important",
+                    whiteSpace: "nowrap"
                   }}
                   >
-                    View source code
+                    View code
                   </Button>
 
                   
@@ -147,10 +168,11 @@ const Projects = () => {
                 color="primary"
                 target="_blank" href="https://github.com/SamGiorgievski/image_generation"
                 sx={{
-                  padding: "0px !important"
+                  padding: "0px !important",
+                  whiteSpace: "nowrap"
                 }}
                 >
-                  View source code
+                  View code
                 </Button>
             </Grid>
 
@@ -218,10 +240,11 @@ const Projects = () => {
                   target="_blank" href="https://github.com/SamGiorgievski/basic-api"
                   padding="none"
                   sx={{
-                    padding: "0px !important"
+                    padding: "0px !important",
+                    whiteSpace: "nowrap"
                   }}
                   >
-                    View source code
+                    View code
                   </Button>
 
                   

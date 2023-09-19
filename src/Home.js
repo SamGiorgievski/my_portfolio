@@ -9,31 +9,37 @@ export default function Home() {
     <>
     <Box
       sx={{
-        width: "50%",
-        height: "30vh",
+        width: "80%",
+        height: "50vh",
         margin: "auto",
         position: 'relative',
         top:'30%',
         display: 'flex',
-        justifyContent: 'space-around',
-        alignItems: 'center'
+        flexDirection: {xs: "column", sm: "row"},
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: {xs: "center", sm: "start"},
+        whiteSpace: "nowrap"
       }}
     > 
       <Avatar 
       alt="Sam G" 
       src={sam}
       sx={{ 
-        width: 250, 
-        height: 250,
+        width: 350, 
+        height: 350,
       }}
       />
 
-      <Box>
+      <Box sx={{
+        marginLeft: '20px'
+        
+      }}>
       <Typography 
       variant="h3" 
       gutterBottom
       sx={{
-        left: '50%'
+        
         
       }}
       >
@@ -57,7 +63,7 @@ export default function Home() {
     </Box>
     <Divider variant="middle" />
 
-    <Box
+    {/* <Box
         sx={{
           width: "60%",
           margin: "auto",
@@ -88,7 +94,7 @@ export default function Home() {
         I LOVED working with developers and learned so much that it inspired me to attend a full-stack web dev bootcamp at Lighthouse Labs and become one myself! It was intense, but I loved every moment of it. Now, i'm looking to for an opportunity to take my tech experience, showcase my skills and grow as a developer.
         </Typography>
 
-        </Box>
+        </Box> */}
 
     <Divider variant="middle" />
 
@@ -104,8 +110,10 @@ export default function Home() {
           justifyContent: "space-around"
         }}
       >
-        <Typography variant="h4" gutterBottom>
-          Skills and Tech Stack
+        <Typography variant="h4" gutterBottom sx={{
+          whiteSpace: "nowrap"
+        }}>
+          Skills and Tech
         </Typography>
 
         <Box sx={{
@@ -132,15 +140,6 @@ export default function Home() {
           <Chip label="Express" />
           <Chip label="GraphQL" />
  
-        </Box>
-
-        <Box sx={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          margin: 1
-        }}>
-
           <Chip label="Apollo GraphQL" />
           <Chip label="PostgreSQL" />
           <Chip label="Firebase" />
@@ -154,7 +153,9 @@ export default function Home() {
 
         </Box>
 
-        <Typography variant="h4" gutterBottom sx={{ marginTop: 3 }}>
+        <Typography variant="h4" gutterBottom sx={{ 
+          marginTop: 3,
+          whiteSpace: "nowrap" }}>
           Personal Interests
         </Typography>
 
