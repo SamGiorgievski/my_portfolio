@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Avatar, Typography, Divider, Chip } from '@mui/material';
 import sam from "./assets/sam.png";
+import Collapse from '@mui/material/Collapse';
+
 
 
 
 
 export default function Home() {
+  const words = ["helpful.", "interesting.", "creative.", "fun."];
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [currentWord, setCurrentWord] = useState(words[currentWordIndex]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 3000);
+
+    // Cleanup the interval on unmount
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    setCurrentWord(words[currentWordIndex]);
+  }, [currentWordIndex]);
+
   return (
     <>
     <Box
@@ -33,7 +52,7 @@ export default function Home() {
       />
 
       <Box sx={{
-        marginLeft: '20px'
+        marginLeft: '50px'
         
       }}>
       <Typography 
@@ -57,12 +76,96 @@ export default function Home() {
       >
         full-stack developer
       </Typography>
+      </Box>
+    </Box>
+
+    <Box sx={{
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      width: "80%",
+      margin: "auto"
+    }}>
+    <Typography 
+      variant="h6" 
+      gutterBottom
+      sx={{
+        marginRight: "5px"
+      }}
+      >
+        From scrum master/project manager to fullstack web developer. I love building apps that are
+      </Typography>
+
+      <div>
+          <Collapse 
+          orientation="horizontal" 
+          in={true}
+          sx={{
+            width: "50px"
+          }}
+            {...(currentWord ? { timeout: 500 } : {})}
+          >
+            <Typography color="primary" variant="h6" >{currentWord} </Typography>
+          </Collapse>
+        </div>
+
 
       </Box>
+
+    <Divider variant="middle" />
+
+
+
+    <Box sx={{
+      display: "flex",
+      alignItems: "center",
+      flexDirection: "column",
+      padding: 5
+    }}>
+
+      <Typography variant="h4">About me</Typography>
+
+
+      <Box sx={{
+        display: "flex",
+        flexDirection: "row",
+        padding: 5
+      }}> 
+      <Box sx={{
+        width: "30vw",
+        textAlign: "center"
+      }}>
+        <Typography>
+          Tech Skills
+        </Typography>
+
+      </Box>
+
+      <Box sx={{
+        width: "30vw",
+        textAlign: "center"
+      }}>
+        <Typography>
+          Other Skills
+        </Typography>
+
+      </Box>
+
+      <Box sx={{
+        width: "30vw",
+        textAlign: "center"
+      }}>
+        <Typography>
+          Tools
+        </Typography>
+    
+    </Box>
       
+      
+      </Box>
+
 
     </Box>
-    <Divider variant="middle" />
 
     {/* <Box
         sx={{
@@ -97,7 +200,6 @@ export default function Home() {
 
         </Box> */}
 
-    <Divider variant="middle" />
 
 
 
