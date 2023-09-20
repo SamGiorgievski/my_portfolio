@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Avatar, Typography, Divider, Chip } from '@mui/material';
+import { Box, Avatar, Typography } from '@mui/material';
 import sam from "./assets/sam.png";
 import Collapse from '@mui/material/Collapse';
-
-
-
-
 
 export default function Home() {
   const words = ["helpful.", "interesting.", "creative.", "fun."];

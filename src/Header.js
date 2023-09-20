@@ -1,13 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { AppBar, Box, Toolbar, Typography, Button, Switch, Menu, MenuItem } from '@mui/material';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
-import LightModeIcon from '@mui/icons-material/LightMode';
+import { AppBar, Box, Toolbar, Typography, Button, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
-
 
 export default function Header( { handleThemeToggle }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
