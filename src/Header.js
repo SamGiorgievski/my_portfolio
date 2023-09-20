@@ -33,7 +33,7 @@ export default function Header( { handleThemeToggle }) {
         >
 
             <Typography 
-            variant="h6" 
+            variant="h5" 
             component={Link}
             to="/"
             color="textPrimary"
@@ -50,7 +50,7 @@ export default function Header( { handleThemeToggle }) {
             display: { xs: 'none', sm: 'flex' }
             }}>
 
-          <Link to="/">
+          <Link to="/" >
               <Button 
               variant="text"
               color="primary"

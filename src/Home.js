@@ -76,6 +76,7 @@ export default function Home() {
       </Box>
     </Box>
 
+
     <Box sx={{
       display: "flex",
       flexDirection: "row",
@@ -139,44 +140,60 @@ export default function Home() {
       display: "flex",
       alignItems: "center",
       flexDirection: "column",
-      padding: 5,
       minWidth: "400px"
     }}>
 
-      <Typography variant="h4">About me</Typography>
+      {/* <Typography variant="h4">About me</Typography> */}
 
 
       <Box sx={{
         display: "flex",
-        flexDirection: "row",
+        flexDirection: "column",
+        justifyContent: "space-evenly",
         padding: 5,
-        minWidth: "400px"
+        width: "90%",
+        height: "40vh",
+        minWidth: "100px"
       }}> 
+
       <Box sx={{
-        width: "30vw",
-        textAlign: "center"
+        width: "125px",
+        margin: "10px"
       }}>
-        <Typography>
+        
+        <Typography
+        variant="h6" 
+        sx={{
+          textAlign: "end"
+       }}>
           Tech Skills
         </Typography>
 
       </Box>
 
       <Box sx={{
-        width: "30vw",
-        textAlign: "center"
+        width: "125px",
+        margin: "10px"
       }}>
-        <Typography>
+        <Typography
+        variant="h6" 
+        sx={{
+           textAlign: "end"
+        }}>
           Other Skills
         </Typography>
 
       </Box>
 
       <Box sx={{
-        width: "30vw",
-        textAlign: "center"
+        width: "125px",
+        margin: "10px"
       }}>
-        <Typography>
+        <Typography 
+        variant="h6" 
+        sx={{
+           textAlign: "end"
+        }}>
           Tools
         </Typography>
     
