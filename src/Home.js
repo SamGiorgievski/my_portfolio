@@ -15,11 +15,11 @@ export default function Home() {
 
     // Cleanup the interval on unmount
     return () => clearInterval(interval);
-  }, []);
+  }, [words]);
 
   useEffect(() => {
     setCurrentWord(words[currentWordIndex]);
-  }, [currentWordIndex]);
+  }, [currentWordIndex, words]);
 
   return (
     <>
