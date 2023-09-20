@@ -35,11 +35,12 @@ export default function Home() {
         position: 'relative',
         top:'30%',
         display: 'flex',
-        flexDirection: {xs: "column", sm: "row"},
+        flexDirection: {xs: "column", sm: "column", md:"row"},
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: {xs: "center", sm: "start"},
-        whiteSpace: "nowrap"
+        whiteSpace: "nowrap",
+        minWidth: "400px"
       }}
     > 
       <Avatar 
@@ -52,16 +53,13 @@ export default function Home() {
       />
 
       <Box sx={{
-        marginLeft: '50px'
-        
+        marginLeft: {xs: "0px", sm: "0px", md:"50px"},
+        textAlign: {xs: "center", sm: "center", md:"left"},
+        marginTop: {xs: "20px", sm: "20px", md:"0px"}
       }}>
       <Typography 
       variant="h3" 
       gutterBottom
-      sx={{
-        
-        
-      }}
       >
         Sam Giorgievski
       </Typography>
@@ -71,7 +69,6 @@ export default function Home() {
       gutterBottom
       sx={{
         left: '50%'
-        
       }}
       >
         full-stack developer
@@ -84,43 +81,66 @@ export default function Home() {
       flexDirection: "row",
       justifyContent: "center",
       width: "80%",
-      margin: "auto"
+      margin: "auto",
+      flexWrap: "wrap", 
+      textAlign: "center",
+      minWidth: "400px"
     }}>
     <Typography 
       variant="h6" 
       gutterBottom
+      display="inline"
       sx={{
         marginRight: "5px"
       }}
       >
-        From scrum master/project manager to fullstack web developer. I love building apps that are
+        From scrum master/project mgr to fullstack web developer, 
       </Typography>
 
-      <div>
-          <Collapse 
-          orientation="horizontal" 
-          in={true}
-          sx={{
-            width: "50px"
-          }}
-            {...(currentWord ? { timeout: 500 } : {})}
-          >
-            <Typography color="primary" variant="h6" >{currentWord} </Typography>
-          </Collapse>
-        </div>
+      <Typography 
+      variant="h6" 
+      gutterBottom
+      display={'inline'}
+      sx={{
+        marginRight: "5px",
+        marginLeft: "5px"
+      }}
+      >
+        I love building apps that are
+      </Typography>
 
 
+      <Typography
+        color="primary"
+        variant="h6"
+        display={'inline'}
+        sx={{
+          marginRight: "5px"
+        }}
+      >
+        <Collapse 
+        orientation="horizontal" 
+        in={true}
+        sx={{
+          width: "50px"
+        }}
+          {...(currentWord ? { timeout: 500 } : {})}
+        >
+          {currentWord} 
+        </Collapse>
+
+        </Typography>
       </Box>
 
-    <Divider variant="middle" />
-
+    {/* <Divider variant="middle" /> */}
 
 
     <Box sx={{
       display: "flex",
       alignItems: "center",
       flexDirection: "column",
-      padding: 5
+      padding: 5,
+      minWidth: "400px"
     }}>
 
       <Typography variant="h4">About me</Typography>
@@ -129,7 +149,8 @@ export default function Home() {
       <Box sx={{
         display: "flex",
         flexDirection: "row",
-        padding: 5
+        padding: 5,
+        minWidth: "400px"
       }}> 
       <Box sx={{
         width: "30vw",
