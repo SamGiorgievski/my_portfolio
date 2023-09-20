@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Box, Avatar, Typography } from '@mui/material';
 import sam from "./assets/sam.png";
 import Collapse from '@mui/material/Collapse';
 
 export default function Home() {
-  const words = ["helpful.", "interesting.", "creative.", "fun."];
+  const words = useMemo(() => ["helpful.", "interesting.", "creative.", "fun."], []); ;
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentWord, setCurrentWord] = useState(words[currentWordIndex]);
 
@@ -86,6 +86,7 @@ export default function Home() {
     <Typography 
       variant="h6" 
       gutterBottom
+      component="div"
       display="inline"
       sx={{
         marginRight: "5px"
