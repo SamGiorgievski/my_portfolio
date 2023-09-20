@@ -4,6 +4,7 @@ import sam from "./assets/sam.png";
 
 
 
+
 export default function Home() {
   return (
     <>
@@ -98,7 +99,9 @@ export default function Home() {
 
     <Divider variant="middle" />
 
-    <Box
+
+
+    {/* <Box
         sx={{
           width: "50%",
           margin: "auto",
@@ -181,7 +184,7 @@ export default function Home() {
 
           </Box>
         </Box>
-      </Box>
+      </Box> */}
 
     </>
   )

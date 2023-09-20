@@ -4,6 +4,8 @@ import { AppBar, Box, Toolbar, Typography, Button, Switch, Menu, MenuItem } from
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import MenuIcon from '@mui/icons-material/Menu';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 
@@ -30,23 +32,23 @@ export default function Header( { handleThemeToggle }) {
         }}
         >
 
-          <Typography 
-          variant="h6" 
-          component={Link}
-          to="/"
-          color="textPrimary"
-          sx={{ textDecoration: 'none',
-          whiteSpace: "nowrap"
-          
-        }}
-          >
-            Sam's Portfolio
-          </Typography>
-
+            <Typography 
+            variant="h6" 
+            component={Link}
+            to="/"
+            color="textPrimary"
+            sx={{ textDecoration: 'none',
+            whiteSpace: "nowrap"
+            
+          }}
+            >
+              Sam's Portfolio
+              
+            </Typography>
+            
           <Box sx={{
             display: { xs: 'none', sm: 'flex' }
             }}>
-
 
           <Link to="/">
               <Button 
@@ -144,13 +146,24 @@ export default function Header( { handleThemeToggle }) {
             flexDirection:"row",
             alignItems:"center"
           }}>
-            <LightModeIcon />
+            {/* <LightModeIcon />
             <Switch 
             color="primary"
             defaultChecked
             onClick={handleThemeToggle}
             />
-            <DarkModeIcon />
+            <DarkModeIcon /> */}
+            <Link to="https://github.com/SamGiorgievski" target="_blank">
+              <GitHubIcon color="primary" sx={{
+                fontSize: 30
+              }}></GitHubIcon>
+            </Link>
+            <Link to="https://www.linkedin.com/in/samgiorgievski/" target="_blank">
+              <LinkedInIcon color="primary" sx={{
+                marginLeft: "10px",
+                fontSize: 30
+              }}></LinkedInIcon>
+            </Link>
           </Box>
         </Toolbar>
       </AppBar>
