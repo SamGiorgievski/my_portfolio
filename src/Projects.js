@@ -22,7 +22,7 @@ const Projects = () => {
           <Paper elevation={3} 
           sx={{
             padding: 3,
-            minWidth: "400px",
+            minWidth: "350px",
             maxWidth: {xs: "600px", sm: "600px", md: "1050px", lg: "1050px", xl: "1050px"},
             margin: "auto"
           }}>
@@ -117,7 +117,7 @@ const Projects = () => {
         <Paper elevation={3} 
           sx={{
             padding: 3,
-            minWidth: "400px",
+            minWidth: "350px",
             maxWidth: {xs: "600px", sm: "600px", md: "1050px", lg: "1050px", xl: "1050px"},
             margin: "auto"
           }}>
@@ -211,7 +211,7 @@ const Projects = () => {
         <Paper elevation={3} 
           sx={{
             padding: 3,
-            minWidth: "400px",
+            minWidth: "350px",
             maxWidth: {xs: "600px", sm: "600px", md: "1050px", lg: "1050px", xl: "1050px"},
             margin: "auto"
           }}>

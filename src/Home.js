@@ -170,7 +170,7 @@ export default function Home() {
           flexDirection: "column",
           justifyContent: "space-evenly",
           padding: 5,
-          width: "90%",
+          width: {xs: "100%", sm: "90%"},
           height: "50%",
           minWidth: "100px"
         }}> 
