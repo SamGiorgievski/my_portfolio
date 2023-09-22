@@ -38,7 +38,7 @@ export default function Home() {
           alignItems: 'center',
           textAlign: {xs: "center", sm: "start"},
           whiteSpace: "nowrap",
-          minWidth: "400px"
+          minWidth: "350px"
         }}
       > 
         <Avatar 
@@ -90,7 +90,7 @@ export default function Home() {
         margin: "auto",
         flexWrap: "wrap", 
         textAlign: "center",
-        minWidth: {xs: "400px", sm: "600px"},
+        minWidth: {xs: "350px", sm: "600px"},
         maxWidth: {xs: "400px", sm: "700px", lg: "1000px"},
         marginTop: {xs: "20px", sm: "50px"}
       }}>
@@ -155,7 +155,7 @@ export default function Home() {
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-        minWidth: "400px",
+        minWidth: "350px",
         maxWidth: "1300px",
         margin: "auto"
       }}>
