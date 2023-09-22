@@ -8,7 +8,8 @@ import basicapi from "../src/assets/basicAPI.png"
 const Projects = () => {
   return (
     <Container sx={{
-      marginTop: "40px"
+      marginTop: "90px"
+      
 
     }}>
       <Grid container spacing={3} sx={{

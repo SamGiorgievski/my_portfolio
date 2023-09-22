@@ -3,7 +3,10 @@ import { Typography, Container, Paper } from '@mui/material';
 
 export default function Experience() {
   return (
-    <Container sx={{ marginTop: '40px' }}>
+    <Container sx={{ 
+      marginTop: '90px',
+      position: "relative"
+       }}>
 
       <Paper elevation={3} sx={{ padding: 3, marginBottom: 3 }}>
         <Typography variant="h4">Skills</Typography>

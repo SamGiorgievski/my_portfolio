@@ -18,13 +18,17 @@ export default function Header( { handleThemeToggle }) {
 
   return (
     <AppBar 
-    position="static"
+    position="fixed"
+    sx={{
+      height: "65px"
+    }}
     >
         <Toolbar 
         sx={{
-          width: "100%",
           display:"flex",
-          justifyContent: { xs: "center", sm:"space-between"}
+          justifyContent: { xs: "center", sm:"space-between"},
+          alignItems: "center",
+          height: "100%"
         }}
         >
 
