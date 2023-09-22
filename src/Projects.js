@@ -8,9 +8,8 @@ import basicapi from "../src/assets/basicAPI.png"
 const Projects = () => {
   return (
     <Container sx={{
+      minWidth: "350px",
       marginTop: "90px"
-      
-
     }}>
       <Grid container spacing={3} sx={{
       }}>
@@ -22,7 +21,6 @@ const Projects = () => {
           <Paper elevation={3} 
           sx={{
             padding: 3,
-            minWidth: "350px",
             maxWidth: {xs: "600px", sm: "600px", md: "1050px", lg: "1050px", xl: "1050px"},
             margin: "auto"
           }}>
@@ -197,11 +195,6 @@ const Projects = () => {
 
           </Paper>
         </Grid>
-
-
-
-
-
 
 
                   {/* PROJECT 3 */}

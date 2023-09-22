@@ -38,7 +38,8 @@ export default function Header( { handleThemeToggle }) {
             to="/"
             color="textPrimary"
             sx={{ textDecoration: 'none',
-            whiteSpace: "nowrap"
+            whiteSpace: "nowrap",
+            verticalAlign: "middle"
             
           }}
             >
@@ -54,6 +55,9 @@ export default function Header( { handleThemeToggle }) {
               <Button 
               variant="text"
               color="primary"
+              sx={{
+                margin: "auto"
+              }}
               >
                 Home
               </Button>
