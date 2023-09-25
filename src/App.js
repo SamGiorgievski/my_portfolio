@@ -6,6 +6,7 @@ import Home from "./Home";
 import Header from "./Header";
 import Projects from "./Projects";
 import Experience from "./Experience";
+import {Helmet} from "react-helmet";
 
 
 function App() {
@@ -42,6 +43,11 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="App">
+
+      <Helmet>
+        <title>Sam's Portfolio</title>
+        <meta name="description" content="Sam Giorgievski's full-stack web developer portfolio" />
+      </Helmet>
 
         <Header 
         handleThemeToggle={handleThemeToggle}
