@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Box, Avatar, Typography } from '@mui/material';
+import { Box, Avatar, Typography, Divider } from '@mui/material';
 import sam from "./assets/sam_profilepic.png";
 import Collapse from '@mui/material/Collapse';
 
@@ -81,7 +81,6 @@ export default function Home() {
         </Box>
       </Box>
 
-
       <Box sx={{
         display: "flex",
         flexDirection: "row",
@@ -145,9 +144,10 @@ export default function Home() {
           </Typography>
         </Box>
 
-      {/* <Divider variant="middle" /> */}
-
-
+      <Divider variant="middle" sx={{
+        marginTop: "30px",
+        marginBottom: "30px"
+      }} />
 
   {/* SKILLS */}
 
@@ -169,7 +169,6 @@ export default function Home() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",
-          padding: 5,
           width: {xs: "100%", sm: "90%"},
           height: "50%",
           minWidth: "100px"
@@ -231,8 +230,6 @@ export default function Home() {
             }}>
               Other Skills
             </Typography>
-
-            
             
           </Box>
 
@@ -287,135 +284,10 @@ export default function Home() {
               }}> Jira (Expert), Postman, PGAdmin, Miro, monday.com, Trello</Typography>
 
             </Box>
-      </Box>
-        
+        </Box>
         
         </Box>
-
-
       </Box>
-
-      {/* <Box
-          sx={{
-            width: "60%",
-            margin: "auto",
-            height: "30vh",
-            paddingTop: 3,
-            display: "flex",
-            flexDirection: "column",
-            
-          }}
-        >
-          <Typography sx={{
-            margin: 3
-          }}>
-          Hey there, I'm Sam Giorgievski, and I've been on quite the tech adventure for the past 8 years. 
-          
-          
-          </Typography>
-
-          <Typography sx={{
-            margin: 3
-          }}>
-          My last position as Project Manager/Scrum Master taught me everything about the software development lifecycle, and what it means to work effectively with a team of developers. 
-          </Typography>
-
-          <Typography sx={{
-            margin: 3
-          }}>
-          I LOVED working with developers and learned so much that it inspired me to attend a full-stack web dev bootcamp at Lighthouse Labs and become one myself! It was intense, but I loved every moment of it. Now, i'm looking to for an opportunity to take my tech experience, showcase my skills and grow as a developer.
-          </Typography>
-
-          </Box> */}
-
-
-
-
-      {/* <Box
-          sx={{
-            width: "50%",
-            margin: "auto",
-            height: "30vh",
-            paddingTop: 3, // Adjust as needed
-            textAlign: 'center',
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-around"
-          }}
-        >
-          <Typography variant="h4" gutterBottom sx={{
-            whiteSpace: "nowrap"
-          }}>
-            Skills and Tech
-          </Typography>
-
-          <Box sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-around"
-          }}> 
-
-          <Box sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            margin: 1
-          }}>
-            <Chip label="Javascript" />
-            <Chip label="HTML" />
-            <Chip label="React" />
-            <Chip label="Ruby on Rails" />
-
-            <Chip label="NodeJS" />
-            <Chip label="jQuery" />
-            <Chip label="Ajax" />
-
-            <Chip label="Express" />
-            <Chip label="GraphQL" />
-  
-            <Chip label="Apollo GraphQL" />
-            <Chip label="PostgreSQL" />
-            <Chip label="Firebase" />
-
-            <Chip label="Jest" />
-            <Chip label="Storybook" />
-            <Chip label="Cypress" />
-            <Chip label="Mocha&Chai" />
-  
-          </Box>
-
-          </Box>
-
-          <Typography variant="h4" gutterBottom sx={{ 
-            marginTop: 3,
-            whiteSpace: "nowrap" }}>
-            Personal Interests
-          </Typography>
-
-          <Box sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-around"
-          }}> 
-
-          <Box sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            margin: 1
-          }}>
-
-            <Chip label="Salsa dancing" />
-            <Chip label="Biking" />
-            <Chip label="Learning spanish" />
-            <Chip label="crypto mining & investing" />
-            <Chip label="gluten-free cooking" />
-            <Chip label="video games" />
-
-            </Box>
-          </Box>
-        </Box> */}
-
     </Box>
   )
 }
