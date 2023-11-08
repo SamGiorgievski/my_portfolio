@@ -9,10 +9,9 @@ import Experience from "./Experience";
 import {Helmet} from "react-helmet";
 
 
+
 function App() {
 
-  // State
-  const [themeToggle, setThemeToggle] = useState("dark")
 
   // Theme
   const darkTheme = createTheme({
@@ -21,26 +20,10 @@ function App() {
     },
   });
 
-  const lightTheme = createTheme({
-    palette: {
-      mode: 'light',
-    },
-  });
 
-  const handleThemeToggle = () => {
-    console.log(themeToggle)
-    setThemeToggle((prev) => (
-      (themeToggle === "dark" ? "light" : "dark")
-      ));
-    console.log(themeToggle)
-  }
-
-  const theme = themeToggle === "dark" ? darkTheme : lightTheme;
-
-  
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={darkTheme} >
       <CssBaseline />
       <div className="App">
 
@@ -50,9 +33,8 @@ function App() {
       </Helmet>
 
         <Header 
-        handleThemeToggle={handleThemeToggle}
         />
-        <Routes>
+        <Routes >
           <Route 
           path ="/" 
           index element = {<Home/>}

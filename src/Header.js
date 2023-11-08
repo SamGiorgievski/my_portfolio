@@ -56,17 +56,28 @@ export default function Header( { handleThemeToggle }) {
               variant="text"
               color="primary"
               sx={{
-                margin: "auto"
+                margin: "auto",
+                fontSize: "1.2em",
+                textTransform: "none"
               }}
               >
                 Home
               </Button>
             </Link>
 
+
+
             <Link to="/experience">
               <Button 
               variant="text"
               color="primary"
+              sx={{
+                margin: "auto",
+                fontSize: "1.2em",
+                textTransform: "none",
+                marginLeft: "15px",
+                marginRight: "15px"
+              }}
               >
                 Experience
               </Button>
@@ -74,7 +85,13 @@ export default function Header( { handleThemeToggle }) {
             
             
             <Link to="/projects">
-              <Button variant="text">
+              <Button 
+              variant="text"
+              sx={{
+                margin: "auto",
+                fontSize: "1.2em",
+                textTransform: "none"
+              }}>
             Projects
             </Button>
             </Link>
@@ -122,7 +139,7 @@ export default function Header( { handleThemeToggle }) {
                   component={Link}
                   to="/experience"
                   color="textPrimary"
-                  sx={{ textDecoration: 'none',
+                  sx={{ textDecoration: 'none'
                   }}
                 >
                   Experience

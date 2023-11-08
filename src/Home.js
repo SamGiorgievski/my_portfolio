@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Box, Avatar, Typography, Divider } from '@mui/material';
-import sam from "./assets/sam_profilepic.png";
+import { Box, Typography, Card, CardMedia} from '@mui/material';
 import Collapse from '@mui/material/Collapse';
+import portfoliopic3 from "./assets/portfoliopic3.jpg";
 
 
 export default function Home() {
@@ -24,14 +24,14 @@ export default function Home() {
 
   return (
     <Box sx={{
-      height: "90vh"
+      height: "80vh"
     }}>
       <Box
         sx={{
           width: "100vw",
           margin: "auto",
           position: 'relative',
-          marginTop: "65px",
+          marginTop: "150px",
           display: 'flex',
           flexDirection: {xs: "column", sm: "column", md:"row"},
           justifyContent: 'center',
@@ -41,17 +41,15 @@ export default function Home() {
           minWidth: "350px"
         }}
       > 
-        <Avatar 
-        alt="Sam G" 
-        src={sam}
-        sx={{ 
-          width: "50%",
-          height: "auto",
-          maxWidth: "300px",
-          maxheight: "300px",
-          marginTop: {xs: "20px", sm: "20px", md:"50px"}
-        }}
-        />
+
+          <Card>
+            <CardMedia
+              component="img"
+              height="400"
+              image={portfoliopic3}
+              alt="Your Image Alt Text"
+            />
+          </Card>
 
         <Box sx={{
           marginLeft: {xs: "0px", sm: "0px", md:"50px"},
@@ -91,7 +89,7 @@ export default function Home() {
         textAlign: "center",
         minWidth: {xs: "350px", sm: "600px"},
         maxWidth: {xs: "400px", sm: "700px", lg: "1000px"},
-        marginTop: {xs: "20px", sm: "50px"}
+        marginTop: {xs: "20px", sm: "100px"}
       }}>
         
       <Typography 
@@ -104,7 +102,7 @@ export default function Home() {
           fontSize: {xs: "10px", sm: "20px"}
         }}
         >
-          From scrum master/project mgr to fullstack web developer, 
+          From software project manager to fullstack web developer, 
         </Typography>
 
         <Typography 
@@ -144,150 +142,6 @@ export default function Home() {
           </Typography>
         </Box>
 
-      <Divider variant="middle" sx={{
-        marginTop: "30px",
-        marginBottom: "30px"
-      }} />
-
-  {/* SKILLS */}
-
-      <Box sx={{
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-        minWidth: "350px",
-        maxWidth: "1300px",
-        margin: "auto"
-      }}>
-
-        {/* <Typography variant="h4">About me</Typography> */}
-
-
-    
-
-        <Box sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-evenly",
-          width: {xs: "100%", sm: "90%"},
-          height: "50%",
-          minWidth: "100px"
-        }}> 
-
-        {/* Row 1 */}
-        <Box sx={{
-          display: "flex",
-          flexDirection: "row"
-        }}>
-
-          <Box sx={{
-            width: {xs: "60px", sm: "125px"},
-            margin: "10px"
-          }}>
-            
-            <Typography
-            variant="h6" 
-            sx={{
-              textAlign: "end",
-              fontSize: {xs: "10px", sm: "20px"}
-          }}>
-              Tech Skills
-            </Typography>
-            </Box>
-
-            <Box sx={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              width: "80%",
-              marginLeft: "10px"
-              
-            }}>
-              <Typography sx={{
-                fontSize: {xs: "10px", sm: "20px"}
-              }}>Javascript, React, NodeJS, Express, HTML, CSS, Ruby on rails, jQuery, Ajax</Typography>
-
-            </Box>
-          
-        </Box>
-
-        {/* Row 2 */}
-
-        <Box sx={{
-          display: "flex",
-          flexDirection: "row"
-        }}>
-
-          <Box sx={{
-            width: {xs: "60px", sm: "125px"},
-            margin: "10px"
-          }}>
-            <Typography
-            variant="h6" 
-            sx={{
-              textAlign: "end",
-              fontSize: {xs: "10px", sm: "20px"}
-            }}>
-              Other Skills
-            </Typography>
-            
-          </Box>
-
-          <Box sx={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              width: "80%",
-              marginLeft: "10px"
-              
-            }}>
-              <Typography sx={{
-                fontSize: {xs: "10px", sm: "20px"}
-              }}>GraphQL, Apollo graphQL, PostgreSQL, Firebase, Jest, Storybook, Cypress, Mocha&Chai</Typography>
-
-            </Box>
-
-        </Box>
-
-        {/* Row 3 */}
-
-        <Box sx={{
-          display: "flex",
-          flexDirection: "row"
-        }}> 
-
-        <Box sx={{
-          width: {xs: "60px", sm: "125px"},
-          margin: "10px"
-        }}>
-          <Typography 
-          variant="h6" 
-          sx={{
-            textAlign: "end",
-            fontSize: {xs: "10px", sm: "20px"}
-          }}>
-            Tools
-          </Typography>
-      
-        </Box>
-
-        <Box sx={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              width: "80%",
-              marginLeft: "10px"
-              
-            }}>
-              <Typography sx={{
-                fontSize: {xs: "10px", sm: "20px"}
-              }}> Jira (Expert), Postman, PGAdmin, Miro, monday.com, Trello</Typography>
-
-            </Box>
-        </Box>
-        
-        </Box>
-      </Box>
     </Box>
   )
 }
