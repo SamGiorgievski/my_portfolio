@@ -16,18 +16,25 @@ export default function Experience() {
           <strong>FRAMEWORKS AND LIBRARIES:</strong> NodeJS, ReactJS, Express,
           EJS, jQuery, Ajax
           <br />
-          <strong>SYSTEMS AND DATABASES:</strong> Git, PostreSQL
+          <strong>SYSTEMS AND DATABASES:</strong> Git, PostreSQL, Jira, Confluence, Miro, Figma
           <br />
           <strong>TESTING:</strong> Cypress, Jest, Storybook, Mocha & Chai
-          <br />
-          <strong>SOFTWARE:</strong> Jira, Miro, monday.com
         </Typography>
       </Paper>
 
       
 
       <Paper elevation={3} sx={{ padding: 3, marginBottom: 3 }}>
-  <Typography variant="h4">Employment</Typography>
+  <Typography variant="h4" sx={{ marginBottom: 2 }}>Employment</Typography>
+  <Typography variant="body1">
+    <strong>Celiapp</strong>
+    <br />
+    <em>Co-owner (Feb 2023 - Present)</em>
+    <ul>
+      <li>Built a community of celiacs in Toronto, hosting events at gluten-free venues</li>
+      <li>Developed an application offering features to help celiacs live safer and easier lives</li>
+    </ul>
+  </Typography>
   <Typography variant="body1">
     <strong>Coinsquare</strong>
     <br />
