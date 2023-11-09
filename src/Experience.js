@@ -29,10 +29,10 @@ export default function Experience() {
   <Typography variant="body1">
     <strong>Celiapp</strong>
     <br />
-    <em>Co-owner (Feb 2023 - Present)</em>
+    <em> Javascript Front-End developer (Feb 2023 - Present)</em>
     <ul>
-      <li>Built a community of celiacs in Toronto, hosting events at gluten-free venues</li>
       <li>Developed an application offering features to help celiacs live safer and easier lives</li>
+      <li>Built a community of celiacs in Toronto, hosting events at gluten-free venues</li>
     </ul>
   </Typography>
   <Typography variant="body1">
