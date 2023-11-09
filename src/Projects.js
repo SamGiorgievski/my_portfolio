@@ -250,7 +250,7 @@ const Projects = () => {
 
             <Typography variant="h4" sx={{
               marginBottom: {xs: "5px", sm: "5px"}
-            }}>Profile Pic Generator</Typography>
+            }}>Profile Picture Generator</Typography>
             <Typography variant="body1" sx={{
                 marginBottom: {xs: "10px", sm: "10px"},
                 wordWrap: "break-word"
@@ -276,7 +276,7 @@ const Projects = () => {
                 <Button 
                 variant="text"
                 color="primary"
-                target="_blank" href="https://github.com/SamGiorgievski/image_generation"
+                target="_blank" href="https://github.com/SamGiorgievski/Profile-Picture-Generator"
                 sx={{
                   padding: "0px !important",
                   whiteSpace: "nowrap"
@@ -343,7 +343,7 @@ const Projects = () => {
               <Typography variant="h4" sx={{
                 marginBottom: {xs: "5px", sm: "5px"}
               }}>
-                Basic API
+                Access API
                 </Typography>
               <Typography variant="body1" sx={{
                 marginBottom: {xs: "10px", sm: "10px"},
@@ -370,7 +370,7 @@ const Projects = () => {
                   <Button 
                   variant="text"
                   color="primary"
-                  target="_blank" href="https://github.com/SamGiorgievski/basic-api"
+                  target="_blank" href="https://github.com/SamGiorgievski/access-api"
                   padding="none"
                   sx={{
                     padding: "0px !important",
