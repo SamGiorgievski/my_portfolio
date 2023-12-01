@@ -13,8 +13,7 @@ export default function Experience() {
         <Typography variant="body1">
           <strong>LANGUAGES:</strong> JavaScript, Ruby on Rails, HTML, CSS, SQL
           <br />
-          <strong>FRAMEWORKS AND LIBRARIES:</strong> NodeJS, ReactJS, Express,
-          EJS, jQuery, Ajax
+          <strong>FRAMEWORKS AND LIBRARIES:</strong> NodeJS, ReactJS, React native, Expo, Express, EJS, jQuery, Ajax
           <br />
           <strong>SYSTEMS AND DATABASES:</strong> Git, PostreSQL, Jira, Confluence, Miro, Figma
           <br />
