@@ -71,7 +71,7 @@ const Projects = () => {
                 marginBottom: {xs: "10px", sm: "10px"},
                 wordWrap: "break-word"
               }}>
-                My passion is to help others with celiac disease. I am releasing an android app that connects celiacs, celiac professionals, gluten free brands, and more. We will create a community and provide tools to help everyone navigate a gluten-free life. Some features include: take a picture of an aisle and display all gluten free items (powered by bard), easy access guides, forum, and events.
+                My passion is to help others with celiac disease. I am releasing an android app that connects celiacs, celiac professionals, gluten free brands, and more. We will create a community and provide tools to help everyone navigate a gluten-free life. Some features include: take a picture of an aisle and display all gluten free items (powered by bard), easy access guides, forum, and events. COMING SOON!
               </Typography>
 
               <Grid sx={{
@@ -91,7 +91,7 @@ const Projects = () => {
                   <Button 
                   variant="text"
                   color="primary"
-                  target="_blank" href="https://github.com/SamGiorgievski/EatSafely"
+                  target="_blank" href="https://github.com/SamGiorgievski/mobileApp"
                   padding="none"
                   sx={{
                     padding: "0px !important",
